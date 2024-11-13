@@ -1,0 +1,397 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.ticketadd-input {
+  margin-bottom: 16px;
+}
+.ticketadd-input > label {
+  color: #00807e;
+  font-weight: bold;
+  margin-right: 30px;
+}
+.ticketadd-input > input,
+.ticketadd-input > select,
+.ticketadd-input > textarea {
+  width: 252px;
+  border: 0;
+  background: #fafafa;
+  padding: 8px 12px;
+  border-bottom: 1px solid #00807e;
+  color: gray;
+}
+.ticketadd-input > select {
+  padding: 8px 7px;
+}
+.ticketadd-input > textarea {
+  height: 110px;
+}
+
+.product-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  width: 100%;
+  position: relative;
+}
+.product-card .area-badge {
+  position: absolute;
+  top: -12px;
+  padding: 8px 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  background: #64c3bf;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.product-card .card_img {
+  position: relative;
+}
+.product-card .card_img .rate-badge {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 5px 8px;
+  background: #00807e;
+  color: #fff;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  width: 40px;
+  text-align: center;
+}
+.product-card .card_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+}
+.product-card .card_text > h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00807e;
+  border-bottom: 2px solid #00807e;
+  margin-bottom: 16px;
+}
+.product-card .card_text > p {
+  color: #818a91;
+  margin-bottom: 22px;
+  word-wrap: break-word;
+}
+.product-card .card_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #00807e;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: auto;
+}
+.product-card .card_price .price-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.product-card .card_price .price-sign {
+  font-size: 32px;
+  margin-left: 4px;
+}
+.product-card .card_price .price {
+  font-size: 32px;
+}
+.product-card .card_price i {
+  margin-right: 6px;
+}
+
+.panel_wrap {
+  max-width: 920px;
+  padding: 60px 95px;
+  margin: 120px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 12px;
+}
+
+.panel_img {
+  max-width: 350px;
+}
+
+.panel_main {
+  width: 350px;
+}
+.panel_main > h2 {
+  color: #00807e;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 3px solid #00807e;
+  margin-bottom: 32px;
+}
+.panel_main > h2 > i {
+  font-size: 20px;
+  margin-right: 6px;
+  vertical-align: text-bottom;
+}
+
+.ticketadd-btn_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.ticketadd-btn_wrap > button {
+  font-size: 20px;
+  padding: 10px 40px;
+  color: #fff;
+  background: #00807e;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+}
+.ticketadd-btn_wrap > button:hover {
+  background: #004d4c;
+}
+
+.cardlist-bg {
+  background: #f7f7f7;
+  padding: 56px 0 120px 0;
+}
+
+.cardlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.card-wrap {
+  padding: 0 15px;
+  width: 33.3%;
+  margin-bottom: 38px;
+}
+
+.cardlist-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filter-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+  gap: 30px;
+  margin-bottom: 52px;
+}
+.filter-wrap > p {
+  color: #818a91;
+}
+
+.filter {
+  width: 255px;
+  padding: 8px 12px;
+  color: gray;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+#chart {
+  width: 170px;
+  height: 170px;
+}/*# sourceMappingURL=all.css.map */

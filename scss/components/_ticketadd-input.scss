@@ -1,0 +1,24 @@
+.ticketadd-input {
+  margin-bottom: 16px;
+  > label {
+    color: #00807e;
+    font-weight: bold;
+    margin-right: 30px;
+  }
+  > input,
+  > select,
+  > textarea {
+    width: 252px;
+    border: 0;
+    background: #fafafa;
+    padding: 8px 12px;
+    border-bottom: 1px solid #00807e;
+    color: gray;
+  }
+  > select {
+    padding: 8px 7px;
+  }
+  > textarea {
+    height: 110px;
+  }
+}
